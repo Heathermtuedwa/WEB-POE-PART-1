@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Amara & Co. with questions about sizing, orders, returns, exchanges, or bulk and corporate clothing enquiries.">
+    <meta name="keywords"
+        content="Amara & Co. enquiry, clothing enquiries, sizing questions, order status, returns, exchanges, corporate clothing">
+
+    <!--
+        Part 1 note: no external stylesheet or script is linked here.
+        Client-side validation and AJAX submission are added in Part 3;
+        this form uses plain HTML only at this stage.
+    -->
+
+    <title>Enquiry | Amara & Co.</title>
+</head>
+
+<body>
+
+    <header>
+        <p>Amara & Co.</p>
+        <p>Everyday essentials, thoughtfully made</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h1>Send Us an Enquiry</h1>
+
+            <p>
+                Questions about sizing, an order, or a bulk/corporate enquiry?
+                Fill in the form below and our team will respond within two
+                business days.
+            </p>
+
+            <form>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+
+                <label for="order-number">Order Number (if applicable)</label>
+                <input type="text" id="order-number" name="order-number">
+
+                <label for="enquiry-type">Enquiry Type</label>
+                <select id="enquiry-type" name="enquiry-type">
+                    <option value="sizing">Sizing / Fit Question</option>
+                    <option value="order">Order Status</option>
+                    <option value="returns">Returns / Exchange</option>
+                    <option value="bulk">Bulk / Corporate Order</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Amara & Co. All rights reserved. |
+            <a href="contact.html">Get in touch</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
