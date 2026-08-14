@@ -280,4 +280,4 @@ All external sources used during the development of this Part 1 submission are r
 
 **Website Development Project — 2026 — Part 1 Submission**
 
-The Amara & Co. website foundation has been developed according to the WEDE5020 Web Development (Introduction) Part 1 requirements, covering organisation planning, content research, sitemap, file structure, and semantic HTML page construction. Part 2 (CSS and responsive design) and Part 3 (JavaScript, SEO, forms and deployment) are not included in this submission.
+The Amara & Co. website foundation has been developed according to the WEDE5020 Web Development (Introduction) Part 1 requirements, covering organisation planning, content research, sitemap, file structure, and semantic HTML page construction. 
