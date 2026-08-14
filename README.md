@@ -4,7 +4,7 @@
 
 * **Student Name:** Heather Mtuedwa
 * **Student Number:** ST10536534
-* **Module:** Web Development (Introduction)
+* **Module:** Web Development 
 * **Module Code:** WEDE5020
 * **Year:** 2026
 
@@ -273,7 +273,6 @@ All external sources used during the development of this Part 1 submission are r
 
 * W3C (2026) *Web Standards*. Available at: https://www.w3.org/standards/ (Accessed: 11 August 2026).
 
-* [Insert reference(s) for any product/team images not self-shot — e.g. stock photography site, photographer, or asset library, per source]
 
 ---
 
