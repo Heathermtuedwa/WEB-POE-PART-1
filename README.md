@@ -2,8 +2,8 @@
 
 ## Student Information
 
-* **Student Name:** [Insert Student Name]
-* **Student Number:** [Insert Student Number]
+* **Student Name:** Heather Mtuedwa
+* **Student Number:** ST10536534
 * **Module:** Web Development (Introduction)
 * **Module Code:** WEDE5020
 * **Year:** 2026
