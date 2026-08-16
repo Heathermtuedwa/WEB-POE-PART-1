@@ -2,9 +2,9 @@
 
 ## Student Information
 
-* **Student Name:** [Insert Student Name]
-* **Student Number:** [Insert Student Number]
-* **Module:** Web Development (Introduction)
+* **Student Name:** Heather Mtuedwa
+* **Student Number:** ST10536534
+* **Module:** Web Development 
 * **Module Code:** WEDE5020
 * **Year:** 2026
 
@@ -232,18 +232,6 @@ Heather/
 
 The website has been designed to adapt to different screen sizes.
 
-### Desktop
-
-![Desktop Screenshot](desktop.png)
-
-### Tablet
-
-![Tablet Screenshot](tablet.png)
-
-### Mobile
-
-![Mobile Screenshot](mobile.png)
-
 Responsive design was implemented using:
 
 * Media queries.
@@ -447,45 +435,6 @@ Completed work includes:
 * Desktop, tablet and mobile testing.
 * Screenshot evidence.
 
----
-
-# Part 3 — JavaScript, SEO and Deployment
-
-The website was enhanced according to the Part 3 requirements.
-
-Completed work includes:
-
-* JavaScript functionality.
-* DOM manipulation.
-* Interactive elements.
-* Interactive map.
-* Gallery lightbox.
-* Dynamic product functionality.
-* Product search.
-* SEO implementation.
-* Title tags.
-* Meta descriptions.
-* Meta keywords.
-* Heading structure.
-* Image optimisation.
-* Image `alt` text.
-* Internal links.
-* Mobile-friendly design.
-* `robots.txt`.
-* `sitemap.xml`.
-* Page-speed optimisation.
-* Basic security considerations.
-* Enquiry form.
-* Contact form.
-* HTML5 validation.
-* JavaScript validation.
-* Validation error messages.
-* Form processing.
-* AJAX form submission.
-* Contact email functionality.
-* Website deployment.
-
----
 
 # GitHub and Version Control
 
@@ -531,11 +480,7 @@ Testing included:
 
 # Deployment
 
-**Deployment Platform:** [Insert Platform]
-
-**Live Website:** [Insert Deployed Website URL]
-
-**GitHub Repository:** [Insert GitHub Repository URL]
+**GitHub Repository:** (https://github.com/Heathermtuedwa/WEB-POE-PART-1)
 
 ---
 
@@ -640,5 +585,5 @@ All external sources used during the development of the project should be refere
 
 **Website Development Project — 2026**
 
-The Amara & Co. website has been developed according to the WEDE5020 Web Development (Introduction) project requirements, covering the foundation, CSS and responsive design, JavaScript functionality, SEO, forms, testing, documentation and deployment requirements.
+The Amara & Co. website has been developed according to the WEDE5020 Web Development  project requirements, covering the foundation, CSS and responsive design, JavaScript functionality, SEO, forms, testing, documentation and deployment requirements.
 
