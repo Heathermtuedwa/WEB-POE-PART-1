@@ -305,26 +305,6 @@ The form includes:
 
 ---
 
-# JavaScript Functionality
-
-JavaScript was implemented to provide interactive and dynamic functionality throughout the website.
-
-The functionality includes:
-
-* DOM manipulation.
-* Product search.
-* Dynamic product filtering.
-* Product image lightbox.
-* Interactive elements.
-* Form validation.
-* Validation error messages.
-* Enquiry form processing.
-* Contact form processing.
-* AJAX form submission.
-* Interactive map functionality.
-
----
-
 # Sitemap
 
 The website structure is:
@@ -525,41 +505,6 @@ Testing included:
 * Added desktop, tablet and mobile screenshot evidence.
 * Updated the README with Part 2 information.
 
-## Part 3 — JavaScript, SEO and Functionality
-
-* Added JavaScript functionality to the website.
-* Implemented DOM manipulation.
-* Added interactive website elements.
-* Added the product image lightbox.
-* Added dynamic product search.
-* Added product filtering.
-* Added interactive map functionality.
-* Added form validation.
-* Added HTML5 validation attributes.
-* Added JavaScript validation.
-* Added validation error messages.
-* Added enquiry form processing.
-* Added enquiry response functionality.
-* Added contact form processing.
-* Added contact email functionality.
-* Added AJAX form submission.
-* Added SEO title tags.
-* Added meta descriptions.
-* Added meta keywords.
-* Improved heading hierarchy.
-* Improved image filenames.
-* Added descriptive image `alt` text.
-* Added internal links.
-* Created `robots.txt`.
-* Created `sitemap.xml`.
-* Applied page-speed optimisation.
-* Applied basic security considerations.
-* Completed responsive and functionality testing.
-* Updated the README with Part 3 information.
-* Updated the changelog and references.
-* Prepared the website for final deployment and submission.
-
----
 
 # References
 
