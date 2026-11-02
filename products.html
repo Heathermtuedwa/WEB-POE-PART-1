@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Shop Amara & Co.'s collection of womenswear, menswear and accessories, including dresses, shirts, trousers, tees, bags and belts.">
+    <meta name="keywords"
+        content="Amara & Co. shop, South African clothing, womenswear, menswear, clothing accessories, dresses, shirts, trousers, bags, belts">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Shop | Amara & Co.</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Amara & Co.</div>
+        <div class="tagline">Everyday essentials, thoughtfully made</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html" class="active">Shop</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h1>Shop the Collection</h1>
+
+            <p>
+                All items ship nationwide within 2–5 business days.
+                Free shipping on orders over R850.
+            </p>
+
+            <!-- Part 3: Product Search -->
+            <div class="product-search">
+                <label for="productSearch">Search products</label>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search for a product..."
+                    aria-label="Search products">
+            </div>
+
+            <!-- Part 3: Message displayed when no products match -->
+            <p id="noResults" hidden>
+                No products found. Please try another search.
+            </p>
+        </section>
+
+
+        <!-- Womenswear -->
+        <section>
+            <h2>Womenswear</h2>
+
+            <div class="grid">
+
+                <div class="card" data-product="Linen Wrap Dress">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Linen Wrap Dress medium.jpg"
+                                srcset="
+                                    images/Linen Wrap Dress small.jpg 480w,
+                                    images/Linen Wrap Dress medium.jpg 800w,
+                                    images/Linen Wrap Dress large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Linen Wrap Dress">
+                        </button>
+                    </picture>
+
+                    <h3>Linen Wrap Dress</h3>
+                    <p>Midi-length, tie waist, breathable linen blend.</p>
+                    <p class="size">Sizes: XS – XL</p>
+                    <p class="price">R899</p>
+
+                </div>
+
+
+                <div class="card" data-product="Cotton Poplin Shirt">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Cotton Poplin Shirt medium.jpg"
+                                srcset="
+                                    images/Cotton Poplin Shirt small.jpg 480w,
+                                    images/Cotton Poplin Shirt medium.jpg 800w,
+                                    images/Cotton Poplin Shirt large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Cotton Poplin Shirt">
+                        </button>
+                    </picture>
+
+                    <h3>Cotton Poplin Shirt</h3>
+                    <p>Relaxed fit, button-down, available in 4 colours.</p>
+                    <p class="size">Sizes: XS – XL</p>
+                    <p class="price">R549</p>
+
+                </div>
+
+
+                <div class="card" data-product="Tailored Wide-Leg Trousers">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Tailored Wide Leg Trousers medium.jpg"
+                                srcset="
+                                    images/Tailored Wide Leg Trousers small.jpg 480w,
+                                    images/Tailored Wide Leg Trousers medium.jpg 800w,
+                                    images/Tailored Wide Leg Trousers large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Tailored Wide-Leg Trousers">
+                        </button>
+                    </picture>
+
+                    <h3>Tailored Wide-Leg Trousers</h3>
+                    <p>High-waisted, mid-weight twill fabric.</p>
+                    <p class="size">Sizes: 28 – 36</p>
+                    <p class="price">R799</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Menswear -->
+        <section>
+            <h2>Menswear</h2>
+
+            <div class="grid">
+
+                <div class="card" data-product="Everyday Crew Tee">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Everyday Crew Tee medium.jpg"
+                                srcset="
+                                    images/Everyday Crew Tee small.jpg 480w,
+                                    images/Everyday Crew Tee medium.jpg 800w,
+                                    images/Everyday Crew Tee large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Everyday Crew Tee">
+                        </button>
+                    </picture>
+
+                    <h3>Everyday Crew Tee</h3>
+                    <p>Heavyweight cotton, pre-shrunk, classic fit.</p>
+                    <p class="size">Sizes: S – XXL</p>
+                    <p class="price">R349</p>
+
+                </div>
+
+
+                <div class="card" data-product="Cotton Overshirt">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Cotton Overshirt1 medium.jpg"
+                                srcset="
+                                    images/Cotton Overshirt1 small.jpg 480w,
+                                    images/Cotton Overshirt1 medium.jpg 800w,
+                                    images/Cotton Overshirt1 large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Cotton Overshirt">
+                        </button>
+                    </picture>
+
+                    <h3>Cotton Overshirt</h3>
+                    <p>Brushed cotton, workwear-inspired cut.</p>
+                    <p class="size">Sizes: S – XXL</p>
+                    <p class="price">R749</p>
+
+                </div>
+
+
+                <div class="card" data-product="Straight-Fit Chinos">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Straight-Fit Chinos medium.jpg"
+                                srcset="
+                                    images/Straight-Fit Chinos small.jpg 480w,
+                                    images/Straight-Fit Chinos medium.jpg 800w,
+                                    images/Straight-Fit Chinos large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Straight-Fit Chinos">
+                        </button>
+                    </picture>
+
+                    <h3>Straight-Fit Chinos</h3>
+                    <p>Stretch cotton twill, tapered leg.</p>
+                    <p class="size">Sizes: 30 – 40</p>
+                    <p class="price">R699</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Accessories -->
+        <section>
+            <h2>Accessories</h2>
+
+            <div class="grid">
+
+                <div class="card" data-product="Canvas Tote Bag">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Canvas Tote Bag medium.jpg"
+                                srcset="
+                                    images/Canvas Tote Bag small.jpg 480w,
+                                    images/Canvas Tote Bag medium.jpg 800w,
+                                    images/Canvas Tote Bag large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Canvas Tote Bag">
+                        </button>
+                    </picture>
+
+                    <h3>Canvas Tote Bag</h3>
+                    <p>Heavy canvas, leather straps, internal pocket.</p>
+                    <p class="price">R399</p>
+
+                </div>
+
+
+                <div class="card" data-product="Woven Belt">
+
+                    <picture>
+                        <button type="button" class="product-image-button">
+                            <img
+                                src="images/Woven Belt medium.jpg"
+                                srcset="
+                                    images/Woven Belt small.jpg 480w,
+                                    images/Woven Belt medium.jpg 800w,
+                                    images/Woven Belt large.jpg 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                       (max-width: 768px) 50vw,
+                                       33vw"
+                                alt="Woven Belt">
+                        </button>
+                    </picture>
+
+                    <h3>Woven Belt</h3>
+                    <p>Adjustable, brass buckle, genuine leather trim.</p>
+                    <p class="price">R290</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Size Guide -->
+        <section>
+            <h2>Size Guide</h2>
+
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Bust / Chest (cm)</th>
+                    <th>Waist (cm)</th>
+                </tr>
+
+                <tr>
+                    <td>XS</td>
+                    <td>82–86</td>
+                    <td>62–66</td>
+                </tr>
+
+                <tr>
+                    <td>S</td>
+                    <td>87–91</td>
+                    <td>67–71</td>
+                </tr>
+
+                <tr>
+                    <td>M</td>
+                    <td>92–97</td>
+                    <td>72–77</td>
+                </tr>
+
+                <tr>
+                    <td>L</td>
+                    <td>98–103</td>
+                    <td>78–83</td>
+                </tr>
+
+                <tr>
+                    <td>XL</td>
+                    <td>104–110</td>
+                    <td>84–90</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Amara & Co. All rights reserved. |
+            <a href="contact.html">Get in touch</a>
+        </p>
+    </footer>
+
+
+    <!-- Product Image Lightbox -->
+    <div id="lightbox" class="lightbox" hidden>
+
+        <button
+            type="button"
+            id="closeLightbox"
+            class="lightbox-close"
+            aria-label="Close product image">
+            &times;
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Product image">
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

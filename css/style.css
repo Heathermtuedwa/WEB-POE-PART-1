@@ -1,0 +1,996 @@
+/* ============================
+   Amara & Co. — Stylesheet
+   ============================ */
+
+/* Colour Variables */
+
+:root {
+    --charcoal: #242424;
+    --espresso: #3a2c27;
+    --rose: #b98282;
+    --rose-dark: #8f5f63;
+    --champagne: #d6b98c;
+    --stone: #eee9e2;
+    --cream: #faf8f4;
+    --white: #ffffff;
+    --border: #ddd5ca;
+    --shadow: rgba(36, 36, 36, 0.10);
+
+    /* Compatibility aliases */
+    --rust: var(--rose-dark);
+    --blush: var(--rose);
+}
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================
+   Header
+   ============================ */
+
+header {
+    background-color: var(--cream);
+    padding: 1.3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 0 var(--border);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--espresso);
+}
+
+header .tagline {
+    font-size: 0.85rem;
+    color: var(--rose-dark);
+    letter-spacing: 0.5px;
+}
+
+/* ============================
+   Navigation
+   ============================ */
+
+nav {
+    background-color: var(--espresso);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--cream);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--rose-dark);
+}
+
+nav ul li a:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: -2px;
+}
+
+nav ul li a:active {
+    background-color: var(--rose);
+    color: var(--charcoal);
+}
+
+/* ============================
+   Main
+   ============================ */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+/* ============================
+   Hero
+   ============================ */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    text-align: center;
+    padding: 4rem 1rem;
+
+    background: linear-gradient(
+        135deg,
+        var(--stone),
+        var(--cream)
+    );
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 2.5rem;
+
+    box-shadow: 0 8px 25px var(--shadow);
+
+    color: var(--white);
+}
+
+/* Hero background video */
+
+.hero video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: -2;
+}
+
+/* Dark overlay keeps hero text readable */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(36, 36, 36, 0.55),
+            rgba(58, 44, 39, 0.60)
+        );
+
+    z-index: -1;
+}
+
+/* Keep hero content above the video */
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+    color: var(--white);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================
+   Buttons
+   ============================ */
+
+.btn {
+    display: inline-block;
+    background-color: var(--espresso);
+    color: var(--cream);
+
+    padding: 0.8rem 2rem;
+    border-radius: 2px;
+
+    border: 1px solid var(--espresso);
+
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.btn:hover {
+    background-color: var(--rose-dark);
+    border-color: var(--rose-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px var(--shadow);
+}
+
+.btn:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+}
+
+.btn:active {
+    background-color: var(--rose);
+    color: var(--charcoal);
+}
+
+/* ============================
+   Section Headings
+   ============================ */
+
+h2 {
+    color: var(--espresso);
+    border-bottom: 2px solid var(--champagne);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--rose-dark);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+/* ============================
+   Cards / Grid
+   ============================ */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.3rem;
+
+    box-shadow: 0 4px 12px var(--shadow);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(36, 36, 36, 0.14);
+    border-color: var(--rose);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card .price {
+    font-weight: 700;
+    color: var(--espresso);
+    font-size: 1.05rem;
+    margin-top: 0.4rem;
+}
+
+.card .size {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+}
+
+/* ============================
+   Product Images
+   ============================ */
+
+.card picture {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background-color: var(--cream);
+    border-radius: 4px;
+}
+
+.card picture img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 4px;
+
+    transition: transform 0.35s ease;
+}
+
+.card:hover picture img {
+    transform: scale(1.025);
+}
+
+/* ============================
+   Clickable Product Images
+   ============================ */
+
+.product-image-button {
+    border: none;
+    padding: 0;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-image-button:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 3px;
+}
+
+/* ============================
+   Product Search
+   ============================ */
+
+.product-search {
+    max-width: 550px;
+    margin-top: 1.5rem;
+}
+
+.product-search label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.product-search input {
+    width: 100%;
+    padding: 0.7rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 2px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.product-search input:focus {
+    outline: none;
+    border-color: var(--rose-dark);
+    box-shadow: 0 0 0 3px rgba(185, 130, 130, 0.18);
+}
+
+#noResults {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--rose-dark);
+}
+
+/* ============================
+   Forms
+   ============================ */
+
+form {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--white);
+
+    padding: 1.8rem;
+
+    border-radius: 4px;
+    border: 1px solid var(--border);
+
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+}
+
+form label:first-child {
+    margin-top: 0;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.6rem;
+
+    background-color: var(--cream);
+
+    border: 1px solid var(--border);
+    border-radius: 2px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--rose-dark);
+    box-shadow: 0 0 0 3px rgba(185, 130, 130, 0.18);
+}
+
+form button {
+    margin-top: 1.3rem;
+
+    background-color: var(--espresso);
+    color: var(--cream);
+
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2px;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+form button:hover {
+    background-color: var(--rose-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px var(--shadow);
+}
+
+form button:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+}
+
+form button:active {
+    background-color: var(--rose);
+    color: var(--charcoal);
+}
+
+/* ============================
+   Form Validation / Response
+   ============================ */
+
+.form-error {
+    color: var(--rose-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.form-response {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.form-response.success {
+    background-color: var(--stone);
+    border: 1px solid var(--border);
+}
+
+.form-response.error {
+    background-color: var(--stone);
+    border: 1px solid var(--rose-dark);
+    color: var(--rose-dark);
+}
+
+/* ============================
+   Interactive Map
+   ============================ */
+
+#storeMap {
+    width: 100%;
+    height: 350px;
+
+    border-radius: 4px;
+    border: 1px solid var(--border);
+
+    margin-top: 1rem;
+
+    box-shadow: 0 5px 15px var(--shadow);
+
+    z-index: 1;
+}
+
+.leaflet-popup-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.leaflet-popup-content strong {
+    color: var(--rose-dark);
+}
+
+/* ============================
+   Contact Info
+   ============================ */
+
+.contact-info {
+    padding: 0;
+}
+
+.contact-info li {
+    list-style: none;
+    margin-bottom: 0.8rem;
+}
+
+.contact-info strong {
+    color: var(--rose-dark);
+}
+
+/* ============================
+   Size Guide Table
+   ============================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    background-color: var(--white);
+
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+table th,
+table td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--espresso);
+    color: var(--cream);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--cream);
+}
+
+/* ============================
+   Footer
+   ============================ */
+
+footer {
+    background-color: var(--espresso);
+    color: var(--cream);
+    text-align: center;
+
+    padding: 1.5rem;
+
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: var(--champagne);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+footer a:focus {
+    outline: 2px solid var(--rose);
+}
+
+footer a:active {
+    color: var(--rose);
+}
+
+/* ============================
+   Content Carousels
+   ============================ */
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    margin-top: 1.5rem;
+
+    border-radius: 4px;
+    border: 1px solid var(--border);
+
+    background-color: var(--cream);
+
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+
+    animation: carousel-scroll-forward 12s linear infinite;
+}
+
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+/* Why Shop With Us — moves left */
+
+#benefitsCarousel .carousel-track {
+    animation-name: carousel-scroll-forward;
+}
+
+/* Shop by Category — moves right */
+
+#categoryCarousel .carousel-track {
+    animation-name: carousel-scroll-reverse;
+}
+
+.carousel-card {
+    width: 320px;
+    min-height: 180px;
+
+    margin-right: 1.5rem;
+    padding: 1.8rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    box-shadow: 0 3px 10px var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.carousel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.carousel-card h3 {
+    margin-bottom: 0.7rem;
+}
+
+.carousel-card p {
+    line-height: 1.6;
+}
+
+@keyframes carousel-scroll-forward {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes carousel-scroll-reverse {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* ============================
+   Product Image Lightbox
+   ============================ */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    z-index: 1000;
+}
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    background-color: var(--cream);
+}
+
+.lightbox-close {
+    position: absolute;
+
+    top: 1rem;
+    right: 1.5rem;
+
+    background: none;
+    border: none;
+
+    color: var(--cream);
+
+    font-size: 2.5rem;
+
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: var(--rose);
+}
+
+.lightbox-close:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 4px;
+}
+
+.lightbox-close:active {
+    color: var(--rose-dark);
+}
+
+/* ============================
+   Accessibility Focus States
+   ============================ */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--champagne);
+    outline-offset: 3px;
+}
+
+/* ============================
+   Page Fade-In Transition
+   ============================ */
+
+body {
+    animation: pageFadeIn 0.45s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============================
+   Responsive — Tablet
+   ============================ */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 1.2rem 1.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.8rem 1rem;
+    }
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .card picture img {
+        height: 200px;
+    }
+}
+
+/* ============================
+   Responsive — Mobile
+   ============================ */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero {
+        padding: 2.5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    form {
+        padding: 1.2rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+
+    .card picture img {
+        height: 220px;
+    }
+
+    #storeMap {
+        height: 260px;
+    }
+
+    .carousel-card {
+        width: 280px;
+    }
+}
+
+/* ============================
+   Reduced Motion Accessibility
+   ============================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    body {
+        animation: none;
+    }
+
+    .carousel-track {
+        animation: none !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
